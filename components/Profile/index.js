@@ -15,6 +15,10 @@ const Profile = () => {
                 <h1>Angel Alemany</h1>
                 <h2>Frontend Web Developer</h2>
             </div>
+
+            <div className={styles.wave1}></div>
+            <div className={styles.wave2}></div>
+            <div className={styles.wave3}></div>
         </div>
     );
 };

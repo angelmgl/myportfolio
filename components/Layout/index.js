@@ -1,13 +1,13 @@
-const Layout = ({ children, dark, setDark }) => {
+const Layout = ({ children, dark }) => {
     return (
         <div
             style={{
                 color: dark ? "#e2e2f2" : "#1e1f26",
                 backgroundColor: dark ? "#1e1f26" : "#e2e2f2",
+                transition: "all 0.5s"
             }}
             className="outerContainer"
         >
-            <button onClick={() => setDark(!dark)}>Change theme</button>
             <main>{children}</main>
 
             <style jsx>{`
