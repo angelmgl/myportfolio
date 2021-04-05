@@ -1,0 +1,20 @@
+.container {
+    padding: 25px 0;
+    background-color: #183E77;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #e2e2f2;
+}
+
+.photo {
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+}
