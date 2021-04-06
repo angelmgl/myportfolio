@@ -55,6 +55,7 @@ const Nav = ({ dark, setDark }) => {
                     background-color: #183e77;
                     position: sticky;
                     top: 0;
+                    z-index: 999;
                 }
 
                 nav .bars {
@@ -67,7 +68,6 @@ const Nav = ({ dark, setDark }) => {
                     display: flex;
                     justify-content: space-evenly;
                     align-items: center;
-                    z-index: 9;
                 }
 
                 .nav-links li {
