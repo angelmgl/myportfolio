@@ -17,10 +17,15 @@ export default function Button({ primary = true, text }) {
                     border: none;
                     outline: none;
                     cursor: pointer;
+                    transition: all 0.5s;
+                    box-shadow: -3px -3px 2px rgba(255, 255, 255, 0.4),
+                                5px 5px 7px rgba(0, 0, 0, 0.3);
                 }
 
                 button:hover {
                     background-color: ${primary ? "#182E55" : "#b2b2c2"};
+                    box-shadow: 3px 3px 2px rgba(255, 255, 255, 0.4),
+                                -3px -3px 5px rgba(0, 0, 0, 0.3);
                 }
             `}</style>
         </>
