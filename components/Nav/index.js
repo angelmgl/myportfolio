@@ -115,16 +115,16 @@ const Nav = ({ dark, setDark }) => {
                         flex-direction: column;
                         justify-content: center;
                         align-items: center;
-                        transition: all 0.5s ease-out;
+                        transition: all .5s ease-out;
                         z-index: 500;
-                        clip-path: circle(0px at 90% 92%);
-                        -webkit-clip-path: circle(0px at 90% 92%);
+                        clip-path: circle(0px at 89% 92%);
+                        -webkit-clip-path: circle(0px at 89% 92%);
                         pointer-events: none;
                     }
 
                     nav .nav-links.active {
-                        clip-path: circle(1000px at 85% 92%);
-                        -webkit-clip-path: circle(1000px at 85% 92%);
+                        clip-path: circle(1000px at 89% 92%);
+                        -webkit-clip-path: circle(1000px at 89% 92%);
                         pointer-events: all;
                     }
 
