@@ -1,3 +1,4 @@
+import About from "../components/About";
 import Info from "../components/Info";
 import Layout from "../components/Layout";
 import Nav from "../components/Nav";
@@ -9,6 +10,7 @@ export default function Home({ dark, setDark }) {
             <Profile />
             <Info />
             <Nav dark={dark} setDark={setDark} />
+            <About />
             <div style={{ height: "2000px" }}></div>
         </Layout>
     );
