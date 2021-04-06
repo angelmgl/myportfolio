@@ -15,13 +15,13 @@ const Nav = ({ dark, setDark }) => {
                     id="home"
                     onClick={() => setNav(!nav)}
                 >
-                    Item 1
+                    <a href="#about">About me</a>
                 </li>
                 <li
                     className={`${nav ? "open" : ""}`}
                     onClick={() => setNav(!nav)}
                 >
-                    Item 2
+                    <a href="#skills">Skills</a>
                 </li>
                 <li
                     className={`${nav ? "open" : ""}`}
