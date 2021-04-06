@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FaTimes, FaBars } from "react-icons/fa";
+import { FaTimes, FaBars, FaSun, FaMoon } from "react-icons/fa";
 
 const Nav = ({ dark, setDark }) => {
     const [nav, setNav] = useState(false);
@@ -39,7 +39,12 @@ const Nav = ({ dark, setDark }) => {
                     className={`${nav ? "open" : ""}`}
                     onClick={() => setNav(!nav)}
                 >
-                    <button onClick={() => setDark(!dark)}>Change theme</button>
+                    <button className="switchTheme" onClick={() => setDark(!dark)}>
+                        {
+                            dark ?
+                            <FaSun /> : <FaMoon />
+                        }
+                    </button>
                 </li>
             </ul>
 
@@ -74,6 +79,15 @@ const Nav = ({ dark, setDark }) => {
 
                 .nav-links li:hover {
                     background-color: #182e55;
+                }
+
+                .switchTheme {
+                    color: #dfaf4e;
+                    background-color: transparent;
+                    border: none;
+                    outline: none;
+                    font-size: 1.75rem;
+                    transform: translateY(4px);
                 }
 
                 @media only screen and (max-width: 576px) {
