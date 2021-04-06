@@ -27,6 +27,14 @@
     align-items: center;
     flex-direction: column;
     gap: 5px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.card:hover {
+    background-color: #183e77;
+    color: #e2e2f2;
+    transform: scale(1.1);
 }
 
 .photo {
