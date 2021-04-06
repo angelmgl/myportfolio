@@ -1,18 +1,10 @@
-.section {
-    padding: 20px;
-    background-color: #83D4D4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
 .wrapper {
     display: flex;
     width: 100%;
-    margin-bottom: 10px;
+    padding: 20px;
     justify-content: space-around;
     align-items: flex-start;
+    background-color: #83D4D4;
     color: #183E77;
 }
 
@@ -55,7 +47,7 @@
         gap: 20px;
     }
 
-    .social {
+    .social, .btn {
         align-self: center;
     }
 }
