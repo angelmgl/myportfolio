@@ -8,8 +8,34 @@
     color: #e2e2f2;
 }
 
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 480px;
+    height: 480px;
+    box-shadow: 0 0 500px 500px rgba(0,0,0,.75);
+    z-index: 99;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 2rem;
+    color: #e2e2f2;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #e2b2b2;
+}
+
 .photo {
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .wave1 {
