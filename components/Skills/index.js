@@ -3,7 +3,7 @@ import styles from "./Skills.module.css";
 
 const Skills = () => {
     return (
-        <div className={styles.container}>
+        <div className={styles.container} id="skills">
             <h2 className={styles.sectionTitle}>Skills</h2>
             <div className={styles.wrapper}>
                 <Card photo="/img/skills/html.png" title="HTML" />
