@@ -88,6 +88,8 @@ const Nav = ({ dark, setDark }) => {
                     outline: none;
                     font-size: 1.75rem;
                     transform: translateY(4px);
+                    filter: drop-shadow(-2px -2px 3px rgba(255, 255, 255, 0.5))
+                            drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
                 }
 
                 @media only screen and (max-width: 576px) {
