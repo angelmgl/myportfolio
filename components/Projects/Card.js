@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { FaExternalLinkAlt } from "react-icons/fa";
+import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import styles from "./Projects.module.css";
 
 const Card = ({
@@ -9,6 +9,7 @@ const Card = ({
     mobile,
     children,
     link,
+    github,
     tech,
 }) => {
     return (
@@ -32,15 +33,27 @@ const Card = ({
                 <div className={styles.info}>
                     {children}
 
-                    <a
-                        href={link}
-                        target="_blank"
-                        rel="noreferrer"
-                        className={styles.link}
-                    >
-                        Visit
-                        <FaExternalLinkAlt className={styles.linkIcon} />
-                    </a>
+                    <div className={styles.links}>
+                        <a
+                            href={link}
+                            target="_blank"
+                            rel="noreferrer"
+                            className={styles.link}
+                        >
+                            Visit
+                            <FaExternalLinkAlt className={styles.linkIcon} />
+                        </a>
+
+                        <a
+                            href={github}
+                            target="_blank"
+                            rel="noreferrer"
+                            className={styles.github}
+                        >
+                            <FaGithub className={styles.githubIcon} />
+                        </a>
+
+                    </div>
 
                     <div className={styles.tech}>
                         {tech.map((item) => (
