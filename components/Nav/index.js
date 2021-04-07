@@ -27,7 +27,7 @@ const Nav = ({ dark, setDark }) => {
                     className={`${nav ? "open" : ""}`}
                     onClick={() => setNav(!nav)}
                 >
-                    Item 3
+                    <a href="#projects">Projects</a>
                 </li>
                 <li
                     className={`${nav ? "open" : ""}`}
