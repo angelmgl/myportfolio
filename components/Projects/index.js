@@ -11,6 +11,7 @@ const Projects = () => {
                 desktop="/img/projects/rick-and-morty-desktop.png"
                 mobile="/img/projects/rick-and-morty-mobile.png"
                 link="https://angelmgl.github.io/rick-and-morty/"
+                github="https://github.com/angelmgl/rick-and-morty/"
                 tech={["css", "js", "react"]}
             >
                 <p style={{ marginTop: "0" }}>
@@ -33,6 +34,7 @@ const Projects = () => {
                 desktop="/img/projects/dolarpy-desktop.png"
                 mobile="/img/projects/dolarpy-mobile.png"
                 link="https://dolarpy.vercel.app/"
+                github="https://github.com/angelmgl/dolarpy/"
                 tech={["css", "react", "next"]}
             >
                 <p style={{ marginTop: "0" }}>
@@ -55,6 +57,7 @@ const Projects = () => {
                 desktop="/img/projects/portfolio-desktop.png"
                 mobile="/img/projects/portfolio-mobile.png"
                 link="https://portfolio-angelmgl.vercel.app/"
+                github="https://github.com/angelmgl/myportfolio/"
                 tech={["css", "react", "next"]}
             >
                 <p style={{ marginTop: "0" }}>
