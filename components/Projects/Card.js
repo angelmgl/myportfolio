@@ -16,10 +16,7 @@ const Card = ({
             <h3 className={styles.projectTitle}>{title}</h3>
             <div className={styles.cardBody}>
                 <div
-                    className={styles.caps}
-                    style={{
-                        order: even ? "1" : "0"
-                    }}
+                    className={styles.caps} id="caps"
                 >
                     <img
                         src={desktop}
@@ -59,6 +56,20 @@ const Card = ({
                     </div>
                 </div>
             </div>
+
+            <style jsx>{`
+                #caps {
+                    order: ${even ? "1" : "0"};
+                    transform: ${even ? "translateX(-50px)" : "translateX(0px)"};
+                }
+
+                @media only screen and (max-width: 970px) {
+                    #caps {
+                        order: 0;
+                        transform: translateX(0px);
+                    }
+                }
+            `}</style>
         </div>
     );
 };

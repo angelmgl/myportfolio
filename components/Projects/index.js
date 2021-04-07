@@ -13,7 +13,7 @@ const Projects = () => {
                 link="https://angelmgl.github.io/rick-and-morty/"
                 tech={["css", "js", "react"]}
             >
-                <p style={{ margin: "0" }}>
+                <p style={{ marginTop: "0" }}>
                     CSR Website built on React js, consume the data from&nbsp;
                     <a
                         href="https://rickandmortyapi.com/"
@@ -35,7 +35,7 @@ const Projects = () => {
                 link="https://dolarpy.vercel.app/"
                 tech={["css", "react", "next"]}
             >
-                <p style={{ margin: "0" }}>
+                <p style={{ marginTop: "0" }}>
                     SSR Website built on Next js, consume the data from&nbsp;
                     <a
                         href="https://dolar.melizeche.com/api/1.0/"
@@ -54,10 +54,10 @@ const Projects = () => {
                 title="My portfolio"
                 desktop="/img/projects/portfolio-desktop.png"
                 mobile="/img/projects/portfolio-mobile.png"
-                link="https://dolarpy.vercel.app/"
+                link="https://portfolio-angelmgl.vercel.app/"
                 tech={["css", "react", "next"]}
             >
-                <p style={{ margin: "0" }}>
+                <p style={{ marginTop: "0" }}>
                     SSR Website built on Next js, entirely designed and
                     developed by me. It includes my profile, contact information,
                     my work and a blog section.
