@@ -30,7 +30,6 @@
 
 .social {
     display: flex;
-    gap: 25px;
     font-size: 3rem;
     cursor: pointer;
     transition: all 0.5s;
@@ -38,6 +37,7 @@
 
 .socialIcon {
     transition: all 0.5s;
+    margin: 0px 5px;
     filter: drop-shadow(-3px -3px 2px rgba(255, 255, 255, 0.5))
             drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
 }
@@ -52,10 +52,10 @@
 
     .wrapper {
         flex-direction: column-reverse;
-        gap: 20px;
     }
 
     .social, .btn {
         align-self: center;
+        margin-bottom: 1.5rem;
     }
 }

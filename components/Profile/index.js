@@ -27,7 +27,7 @@ const Profile = () => {
                 height={250}
                 onClick={() => setIsPicOpen(true)}
             />
-            <div>
+            <div className={styles.info}>
                 <h1>Angel Alemany</h1>
                 <h2>Frontend Web Developer</h2>
             </div>

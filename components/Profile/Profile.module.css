@@ -38,6 +38,10 @@
     cursor: pointer;
 }
 
+.info {
+    margin-top: 1rem;
+}
+
 .wave1 {
     position: absolute;
     bottom: 0;
@@ -94,6 +98,5 @@
     .container {
         flex-direction: column;
         text-align: center;
-        gap: 20px;
     }
 }
