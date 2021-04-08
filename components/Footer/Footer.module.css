@@ -1,0 +1,11 @@
+.container {
+    background-color: #182e55;
+    padding: 10px 25px;
+    margin-top: 2rem;
+}
+
+.text {
+    text-align: center;
+    font-size: 1.25rem;
+    color: #e2e2f2;
+}
