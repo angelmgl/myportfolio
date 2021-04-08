@@ -6,6 +6,7 @@ import Nav from "../components/Nav";
 import Profile from "../components/Profile";
 import Projects from "../components/Projects";
 import Skills from "../components/Skills";
+import Footer from "../components/Footer";
 
 export default function Home({ dark, setDark }) {
     return (
@@ -35,7 +36,7 @@ export default function Home({ dark, setDark }) {
             <About />
             <Skills />
             <Projects />
-            <div style={{ height: "2000px" }}></div>
+            <Footer />
         </Layout>
     );
 }
