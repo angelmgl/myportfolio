@@ -12,7 +12,7 @@ const Projects = () => {
                 mobile="/img/projects/rick-and-morty-mobile.png"
                 link="https://angelmgl.github.io/rick-and-morty/"
                 github="https://github.com/angelmgl/rick-and-morty/"
-                tech={["css", "js", "react"]}
+                tech={["css", "javascript", "react"]}
             >
                 <p style={{ marginTop: "0" }}>
                     CSR Website built on React js, consume the data from&nbsp;

@@ -61,6 +61,7 @@ const Card = ({
                                 key={item}
                                 src={`/img/skills/${item}.png`}
                                 alt={item}
+                                title={item}
                                 width={40}
                                 height={40}
                                 className={styles.icon}

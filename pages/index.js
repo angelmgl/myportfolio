@@ -10,33 +10,35 @@ import Footer from "../components/Footer";
 
 export default function Home({ dark, setDark }) {
     return (
-        <Layout dark={dark}>
-            <Head>
-                <title>Angel Alemany, Frontend Web Developer</title>
-                <meta
-                    name="description"
-                    content="Hi there! I'm a frontend web developer from Capiatá, Paraguay. Check out my work!"
-                />
-                <meta name="robots" content="index, follow" />
-                <meta
-                    property="og:title"
-                    content="Take a look at my portfolio!"
-                />
-                <meta property="og:image" content="/img/profile.png" />
-                <meta property="og:type" content="website" />
-                <meta
-                    property="og:description"
-                    content="Hi there! I'm a frontend web developer from Capiatá, Paraguay. Check out my work!"
-                />
-                <meta name="theme-color" content="#183e77" />
-            </Head>
+        <>
             <Profile />
             <Info />
             <Nav dark={dark} setDark={setDark} />
-            <About />
-            <Skills />
-            <Projects />
+            <Layout dark={dark}>
+                <Head>
+                    <title>Angel Alemany, Frontend Web Developer</title>
+                    <meta
+                        name="description"
+                        content="Hi there! I'm a frontend web developer from Capiatá, Paraguay. Check out my work!"
+                    />
+                    <meta name="robots" content="index, follow" />
+                    <meta
+                        property="og:title"
+                        content="Take a look at my portfolio!"
+                    />
+                    <meta property="og:image" content="/img/profile.png" />
+                    <meta property="og:type" content="website" />
+                    <meta
+                        property="og:description"
+                        content="Hi there! I'm a frontend web developer from Capiatá, Paraguay. Check out my work!"
+                    />
+                    <meta name="theme-color" content="#183e77" />
+                </Head>
+                <About />
+                <Skills />
+                <Projects />
+            </Layout>
             <Footer />
-        </Layout>
+        </>
     );
 }

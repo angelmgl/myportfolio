@@ -1,11 +1,16 @@
 .wrapper {
-    display: flex;
+    background-color: #83D4D4;
+    color: #183E77;
+}
+
+.container {
     width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
     padding: 20px;
     justify-content: space-around;
     align-items: flex-start;
-    background-color: #83D4D4;
-    color: #183E77;
 }
 
 .info {
@@ -50,7 +55,7 @@
 
 @media only screen and (max-width: 576px) {
 
-    .wrapper {
+    .container {
         flex-direction: column-reverse;
     }
 

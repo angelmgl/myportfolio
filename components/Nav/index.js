@@ -62,6 +62,11 @@ const Nav = ({ dark, setDark }) => {
                     display: none;
                 }
 
+                .nav-links {
+                    max-width: 1000px;
+                    margin: 0 auto;
+                }
+
                 nav .nav-links {
                     width: 100%;
                     height: 100%;

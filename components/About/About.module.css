@@ -1,6 +1,5 @@
 .container {
-    padding: 10px 25px;
-    margin: 2rem 0;
+    padding: 2rem 25px 10px;
     border-radius: 10px;
     border-bottom: 1px solid #182e55;
     overflow: hidden;
@@ -19,7 +18,7 @@
     border: 1px solid #182e55;
     border-radius: 10px;
     color: #182e55;
-    transform: translateY(-2.5rem);
+    transform: translateY(-14px);
     cursor: pointer;
     outline: none;
 }
