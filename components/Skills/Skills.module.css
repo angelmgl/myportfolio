@@ -7,8 +7,38 @@
     font-size: 2.5rem;
 }
 
+.studies {
+    margin: 1rem 0 2rem;
+}
+
+.study {
+    display: flex;
+}
+
+.study:first-child {
+    margin-bottom: 2rem;
+}
+
+.award {
+    font-size: 5rem;
+    margin-right: 1rem;
+    color: #efa412;
+}
+
+.link {
+    background-color: #183e77;
+    color: #e2e2f2;
+    border-radius: 10px;
+    padding: 0.5rem 2rem;
+    transition: all 0.5s;
+}
+
+.link:hover {
+    background-color: #182e57;
+}
+
 .wrapper {
-    margin: 20px 0 0;
+    padding-top: 2rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     align-items: center;
@@ -54,5 +84,14 @@
 
     .wrapper {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .study {
+        flex-direction: column;
+    }
+
+    .award {
+        margin: 0 auto;
+        margin-bottom: 1rem;
     }
 }

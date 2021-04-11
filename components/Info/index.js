@@ -5,6 +5,7 @@ import {
     FaMapMarkerAlt,
     FaBirthdayCake,
     FaCoffee,
+    FaFlask
 } from "react-icons/fa";
 import Button from "../components/Button";
 import styles from "./Info.module.css";
@@ -21,6 +22,10 @@ const Info = () => {
                     <li>
                         <FaBirthdayCake />
                         <span className={styles.data}>23 years old</span>
+                    </li>
+                    <li>
+                        <FaFlask />
+                        <span className={styles.data}>UX designer and researcher</span>
                     </li>
                     <li>
                         <FaCoffee />

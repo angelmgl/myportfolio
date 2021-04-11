@@ -1,10 +1,46 @@
+import { FaAward } from "react-icons/fa";
 import Card from "./Card";
 import styles from "./Skills.module.css";
 
 const Skills = () => {
     return (
-        <div className={styles.container} id="skills">
+        <section className={styles.container} id="skills">
             <h2 className={styles.sectionTitle}>Skills</h2>
+            <div className={styles.studies}>
+                <div className={styles.study}>
+                    <FaAward className={styles.award} />
+                    <div className={styles.info}>
+                        <h3>Especialization: User Experience Research and Design</h3>
+                        <p style={{margin: "0.5rem 0"}}>University of Michigan - Coursera</p>
+                        <a
+                            href="https://www.coursera.org/account/accomplishments/specialization/certificate/XRA9FD3K8ZR3"
+                            target="_blank"
+                            rel="noreferrer"
+                            className={styles.link}
+                        >
+                            View certificate
+                        </a>
+                    </div>
+                </div>
+                <div className={styles.study}>
+                    <FaAward className={styles.award} />
+                    <div className={styles.info}>
+                        <h3>Especialization: Full Stack Web Development with React</h3>
+                        <p style={{margin: "0.5rem 0"}}>
+                            The Hong Kong University of Science and Technology -
+                            Coursera
+                        </p>
+                        <a
+                            href="https://www.coursera.org/account/accomplishments/specialization/certificate/YGQUNN64E7WG"
+                            target="_blank"
+                            rel="noreferrer"
+                            className={styles.link}
+                        >
+                            View certificate
+                        </a>
+                    </div>
+                </div>
+            </div>
             <div className={styles.wrapper}>
                 <Card photo="/img/skills/html.png" title="HTML" />
                 <Card photo="/img/skills/css.png" title="CSS" />
@@ -19,7 +55,7 @@ const Skills = () => {
                 <Card photo="/img/skills/figma.png" title="Figma" />
                 <Card photo="/img/skills/photoshop.png" title="Photoshop" />
             </div>
-        </div>
+        </section>
     );
 };
 

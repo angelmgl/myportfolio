@@ -61,7 +61,10 @@ const About = () => {
                 <p>
                     In recent times I became passionate about web development
                     and have been learning and creating my own projects for a
-                    long time. Right now I feel empowered to take wider
+                    long time. I also completed a specialization in{" "}
+                    <strong>UX research and design</strong> with teachers from
+                    the University of Michigan trough the Coursera learning
+                    platform. Right now I feel empowered to take wider
                     responsibilities and projects.
                 </p>
                 <p>
