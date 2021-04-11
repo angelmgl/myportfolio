@@ -6,8 +6,8 @@ const Contact = () => {
         <section className={styles.container}>
             <img src="/img/message.svg" alt="message" className={styles.svg} />
             <div className={styles.contact}>
-                <h2>Interested in working together?</h2>
-                <p>
+                <h2 style={{fontSize: "2rem"}}>Interested in working together?</h2>
+                <p style={{fontSize: "1.5rem"}}>
                     I’m always open to collaborate in projects or job
                     opportunities.
                 </p>
