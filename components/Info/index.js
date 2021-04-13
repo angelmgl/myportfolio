@@ -5,7 +5,7 @@ import {
     FaMapMarkerAlt,
     FaBirthdayCake,
     FaCoffee,
-    FaFlask
+    FaFlask,
 } from "react-icons/fa";
 import styles from "./Info.module.css";
 
@@ -32,9 +32,27 @@ const Info = () => {
                     </li>
                 </ul>
                 <div className={styles.social}>
-                    <FaGithub className={styles.socialIcon} />
-                    <FaTwitter className={styles.socialIcon} />
-                    <FaLinkedin className={styles.socialIcon} />
+                    <a
+                        href="https://github.com/angelmgl/"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <FaGithub className={styles.socialIcon} />
+                    </a>
+                    <a
+                        href="https://twitter.com/angelmgljpr/"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <FaTwitter className={styles.socialIcon} />
+                    </a>
+                    <a
+                        href="https://linkedin.com/in/angelmgl/"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <FaLinkedin className={styles.socialIcon} />
+                    </a>
                 </div>
                 <div className={styles.btn}>
                     <a href="#contact" className={styles.link}>
