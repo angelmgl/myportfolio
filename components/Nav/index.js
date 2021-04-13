@@ -97,7 +97,7 @@ const Nav = ({ dark, setDark }) => {
                             drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
                 }
 
-                @media only screen and (max-width: 576px) {
+                @media only screen and (max-width: 656px) {
                     nav {
                         z-index: 999;
                     }
