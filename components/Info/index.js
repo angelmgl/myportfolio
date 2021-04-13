@@ -7,7 +7,6 @@ import {
     FaCoffee,
     FaFlask
 } from "react-icons/fa";
-import Button from "../components/Button";
 import styles from "./Info.module.css";
 
 const Info = () => {
@@ -25,7 +24,7 @@ const Info = () => {
                     </li>
                     <li>
                         <FaFlask />
-                        <span className={styles.data}>UX designer and researcher</span>
+                        <span className={styles.data}>UX design</span>
                     </li>
                     <li>
                         <FaCoffee />
@@ -38,7 +37,9 @@ const Info = () => {
                     <FaLinkedin className={styles.socialIcon} />
                 </div>
                 <div className={styles.btn}>
-                    <Button text="Contact me!" />
+                    <a href="#contact" className={styles.link}>
+                        Message
+                    </a>
                 </div>
             </div>
         </section>
