@@ -2,13 +2,12 @@ import { useState } from "react";
 import Link from "next/link";
 import { FaTimes, FaBars, FaSun, FaMoon } from "react-icons/fa";
 
-//this is the nav for the index page
+//this is the navbar for the blog section
 const Nav = ({ dark, setDark }) => {
     const [nav, setNav] = useState(false);
 
     return (
         <nav>
-
             {/*
             this is the button to open/close the menu in mobile
             */}
@@ -16,30 +15,16 @@ const Nav = ({ dark, setDark }) => {
                 {nav ? <FaTimes /> : <FaBars />}
             </div>
 
-
             <ul className={`nav-links ${nav ? "active" : ""}`}>
-                
                 <li
                     className={`${nav ? "open" : ""}`}
                     onClick={() => setNav(!nav)}
                 >
-                    <a href="#about">About me</a>
+                    <Link href="/">
+                        <a>Home</a>
+                    </Link>
                 </li>
-                
-                <li
-                    className={`${nav ? "open" : ""}`}
-                    onClick={() => setNav(!nav)}
-                >
-                    <a href="#skills">Skills</a>
-                </li>
-                
-                <li
-                    className={`${nav ? "open" : ""}`}
-                    onClick={() => setNav(!nav)}
-                >
-                    <a href="#projects">Projects</a>
-                </li>
-                
+
                 <li
                     className={`${nav ? "open" : ""}`}
                     onClick={() => setNav(!nav)}
@@ -48,16 +33,34 @@ const Nav = ({ dark, setDark }) => {
                         <a>Blog</a>
                     </Link>
                 </li>
-                
+
                 <li
                     className={`${nav ? "open" : ""}`}
                     onClick={() => setNav(!nav)}
                 >
-                    <button className="switchTheme" onClick={() => setDark(!dark)}>
-                        {
-                            dark ?
-                            <FaSun /> : <FaMoon />
-                        }
+                    <Link href="/#projects">
+                        <a>Portfolio</a>
+                    </Link>
+                </li>
+
+                <li
+                    className={`${nav ? "open" : ""}`}
+                    onClick={() => setNav(!nav)}
+                >
+                    <Link href="/#contact">
+                        <a>Contact</a>
+                    </Link>
+                </li>
+
+                <li
+                    className={`${nav ? "open" : ""}`}
+                    onClick={() => setNav(!nav)}
+                >
+                    <button
+                        className="switchTheme"
+                        onClick={() => setDark(!dark)}
+                    >
+                        {dark ? <FaSun /> : <FaMoon />}
                     </button>
                 </li>
             </ul>
@@ -108,7 +111,7 @@ const Nav = ({ dark, setDark }) => {
                     font-size: 1.75rem;
                     transform: translateY(4px);
                     filter: drop-shadow(-2px -2px 3px rgba(255, 255, 255, 0.5))
-                            drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+                        drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
                 }
 
                 @media only screen and (max-width: 656px) {
@@ -150,7 +153,7 @@ const Nav = ({ dark, setDark }) => {
                         flex-direction: column;
                         justify-content: center;
                         align-items: center;
-                        transition: all .5s ease-out;
+                        transition: all 0.5s ease-out;
                         z-index: 500;
                         clip-path: circle(0px at 89% 92%);
                         -webkit-clip-path: circle(0px at 89% 92%);
