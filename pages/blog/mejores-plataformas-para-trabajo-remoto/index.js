@@ -40,14 +40,14 @@ const Article = ({ dark, setDark }) => {
             </Head>
             <NavBar dark={dark} setDark={setDark} />
             <Layout dark={dark}>
-                <div className="container">
+                <section>
                     <Content />
-                </div>
+                </section>
             </Layout>
             <Footer />
 
             <style jsx>{`
-                .container {
+                section {
                     padding: 1rem;
                 }
             `}</style>
