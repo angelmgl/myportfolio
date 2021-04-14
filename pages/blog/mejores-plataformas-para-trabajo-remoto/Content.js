@@ -1,12 +1,7 @@
-import Layout from "../../components/Layout";
-import NavBar from "../../components/NavBar";
-import Footer from "../../components/Footer";
-
-const Article = ({ dark, setDark }) => {
+const Content = () => {
     return (
         <>
-            <NavBar dark={dark} setDark={setDark} />
-            <Layout dark={dark}>
+            <img src="/img/goals.svg" alt="trabajo remoto" />
                 <h1>
                     Las mejores plataformas para conseguir trabajo remoto en
                     dólares
@@ -44,7 +39,7 @@ const Article = ({ dark, setDark }) => {
                     <a
                         href="https://flexjobs.com"
                         target="_blank"
-                        rel="noreferrer"
+                        rel="nofollow noopener noreferrer"
                     >
                         <img
                             src="https://i.imgur.com/QT3tUHm.png"
@@ -68,10 +63,10 @@ const Article = ({ dark, setDark }) => {
                     <a
                         href="https://whoishiring.io"
                         target="_blank"
-                        rel="noreferrer"
+                        rel="nofollow noopener noreferrer"
                     >
                         <img
-                            src="https://i.imgur.com/BODKMo7.png"
+                            src="https://i.imgur.com/lTnB9nm.png"
                             alt="whoishiring"
                             loading="lazy"
                         />
@@ -94,7 +89,7 @@ const Article = ({ dark, setDark }) => {
                     <a
                         href="https://upwork.com"
                         target="_blank"
-                        rel="noreferrer"
+                        rel="nofollow noopener noreferrer"
                     >
                         <img
                             src="https://i.imgur.com/M3O8HjL.png"
@@ -119,7 +114,7 @@ const Article = ({ dark, setDark }) => {
                     <a
                         href="https://remoteok.io"
                         target="_blank"
-                        rel="noreferrer"
+                        rel="nofollow noopener noreferrer"
                     >
                         <img
                             src="https://i.imgur.com/fJLZ7CM.png"
@@ -145,7 +140,7 @@ const Article = ({ dark, setDark }) => {
                     <a
                         href="https://remoteml.com/"
                         target="_blank"
-                        rel="noreferrer"
+                        rel="nofollow noopener noreferrer"
                     >
                         <img
                             src="https://i.imgur.com/TH3Gxhw.png"
@@ -171,7 +166,7 @@ const Article = ({ dark, setDark }) => {
                     <a
                         href="https://www.freelancer.com/"
                         target="_blank"
-                        rel="noreferrer"
+                        rel="nofollow noopener noreferrer"
                     >
                         <img
                             src="https://i.imgur.com/GInyzDr.png"
@@ -198,7 +193,7 @@ const Article = ({ dark, setDark }) => {
                     <a
                         href="https://www.simplyhired.com/"
                         target="_blank"
-                        rel="noreferrer"
+                        rel="nofollow noopener noreferrer"
                     >
                         <img
                             src="https://i.imgur.com/8pt57GG.png"
@@ -224,7 +219,7 @@ const Article = ({ dark, setDark }) => {
                     <a
                         href="https://weworkremotely.com"
                         target="_blank"
-                        rel="noreferrer"
+                        rel="nofollow noopener noreferrer"
                     >
                         <img
                             src="https://i.imgur.com/lTnB9nm.png"
@@ -254,7 +249,7 @@ const Article = ({ dark, setDark }) => {
                         <a
                             href="https://remote.co"
                             target="_blank"
-                            rel="noreferrer"
+                            rel="nofollow noopener noreferrer"
                         >
                             Remote.co
                         </a>
@@ -263,7 +258,7 @@ const Article = ({ dark, setDark }) => {
                         <a
                             href="https://dice.com"
                             target="_blank"
-                            rel="noreferrer"
+                            rel="nofollow noopener noreferrer"
                         >
                             Dice.com
                         </a>
@@ -272,7 +267,7 @@ const Article = ({ dark, setDark }) => {
                         <a
                             href="https://angel.co"
                             target="_blank"
-                            rel="noreferrer"
+                            rel="nofollow noopener noreferrer"
                         >
                             Angel.io
                         </a>
@@ -303,16 +298,18 @@ const Article = ({ dark, setDark }) => {
                         margin: 0 auto;
                     }
 
+                    h1 {
+                        margin: 1.5rem 0;
+                    }
+
                     .list-links {
                         padding-left: 2rem;
                         font-size: 1.5rem;
                         color: #183e77;
                     }
                 `}</style>
-            </Layout>
-            <Footer />
         </>
-    );
-};
+    )
+}
 
-export default Article;
+export default Content;
