@@ -1,12 +1,16 @@
 import Link from "next/link";
 
-const Thumbnail = ({ title, url, image, description }) => {
+const Thumbnail = ({ title, url, image, description, date, tags }) => {
     return (
         <Link href={`/blog/${url}`}>
             <article>
                 <img src={image} alt={title} />
                 <div className="details">
                     <h2>{title}</h2>
+                    <p>
+                        <small>{date}</small> - &nbsp;
+                        <small>{tags.join(", ")}</small>
+                    </p>
                     <p>{description}</p>
                 </div>
 
@@ -23,7 +27,7 @@ const Thumbnail = ({ title, url, image, description }) => {
                     }
 
                     article:hover {
-                        background-color: rgba(0,0,0,0.25)
+                        background-color: rgba(0, 0, 0, 0.25);
                     }
 
                     img {
