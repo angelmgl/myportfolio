@@ -18,6 +18,7 @@ const Blog = ({ dark, setDark }) => {
                             image={article.image}
                             date={article.date}
                             tags={article.tags}
+                            key={article.id}
                         />
                     ))}
                 </div>

@@ -34,6 +34,12 @@ const Thumbnail = ({ title, url, image, description, date, tags = [] }) => {
                         max-width: 220px;
                         margin-right: 1rem;
                     }
+
+                    @media only screen and (max-width: 768px) {
+                        article {
+                            flex-direction: column;
+                        }
+                    }
                 `}</style>
             </article>
         </Link>
