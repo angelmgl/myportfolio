@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const Thumbnail = ({ title, url, image, description, date, tags }) => {
+const Thumbnail = ({ title, url, image, description, date, tags = [] }) => {
     return (
         <Link href={`/blog/${url}`}>
             <article>
