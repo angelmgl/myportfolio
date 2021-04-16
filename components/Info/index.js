@@ -3,7 +3,6 @@ import {
     FaTwitter,
     FaLinkedin,
     FaMapMarkerAlt,
-    FaBirthdayCake,
     FaCoffee,
     FaFlask,
 } from "react-icons/fa";
@@ -17,10 +16,6 @@ const Info = () => {
                     <li>
                         <FaMapMarkerAlt />
                         <span className={styles.data}>Capiatá, Paraguay</span>
-                    </li>
-                    <li>
-                        <FaBirthdayCake />
-                        <span className={styles.data}>23 years old</span>
                     </li>
                     <li>
                         <FaFlask />

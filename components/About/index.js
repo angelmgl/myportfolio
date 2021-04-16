@@ -9,7 +9,7 @@ const About = () => {
             <div
                 className={styles.container}
                 id="about"
-                style={{ height: isOpen ? "auto" : "15rem" }}
+                style={{ height: isOpen ? "auto" : "14.5rem" }}
             >
                 <h2 className={styles.sectionTitle}>About me</h2>
                 <p>
@@ -63,7 +63,7 @@ const About = () => {
                     and have been learning and creating my own projects for a
                     long time. I also completed a specialization in{" "}
                     <strong>UX research and design</strong> with teachers from
-                    the University of Michigan trough the Coursera learning
+                    the University of Michigan through the Coursera learning
                     platform. Right now I feel empowered to take wider
                     responsibilities and projects.
                 </p>
