@@ -29,8 +29,23 @@ const Projects = () => {
             </Card>
 
             <Card
-                title="Dolar PY"
+                title="Jopy App"
                 even={true}
+                desktop="/img/projects/jopy-desktop.png"
+                mobile="/img/projects/jopy-mobile.png"
+                link="https://jopy-front.herokuapp.com/"
+                github="https://github.com/angelmgl/jopy-front/"
+                tech={["node", "express", "mysql", "react", "sass"]}
+            >
+                <p style={{ marginTop: "0" }}>
+                    Application for personal budget management. It allows you to
+                    create and edit income and expenses of money, and show a
+                    balance resulting from registered operations.
+                </p>
+            </Card>
+
+            <Card
+                title="Dolar PY"
                 desktop="/img/projects/dolarpy-desktop.png"
                 mobile="/img/projects/dolarpy-mobile.png"
                 link="https://dolarpy.vercel.app/"
@@ -54,6 +69,7 @@ const Projects = () => {
 
             <Card
                 title="My portfolio"
+                even={true}
                 desktop="/img/projects/portfolio-desktop.png"
                 mobile="/img/projects/portfolio-mobile.png"
                 link="https://portfolio-angelmgl.vercel.app/"
@@ -62,8 +78,8 @@ const Projects = () => {
             >
                 <p style={{ marginTop: "0" }}>
                     SSR Website built on Next js, entirely designed and
-                    developed by me. It includes my profile, contact information,
-                    my work and a blog section.
+                    developed by me. It includes my profile, contact
+                    information, my work and a blog section.
                 </p>
             </Card>
 

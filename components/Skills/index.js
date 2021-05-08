@@ -50,10 +50,14 @@ const Skills = () => {
                 <Card photo="/img/skills/next.png" title="Next" />
                 <Card photo="/img/skills/node.png" title="Node" />
                 <Card photo="/img/skills/npm.png" title="npm" />
+                <Card photo="/img/skills/express.png" title="Express" />
                 <Card photo="/img/skills/git.png" title="Git" />
                 <Card photo="/img/skills/bootstrap.png" title="Bootstrap" />
                 <Card photo="/img/skills/figma.png" title="Figma" />
                 <Card photo="/img/skills/photoshop.png" title="Photoshop" />
+                <Card photo="/img/skills/wordpress.png" title="Wordpress" />
+                <Card photo="/img/skills/mysql.png" title="MySQL" />
+                <Card photo="/img/skills/mongodb.png" title="MongoDB" />
             </div>
         </section>
     );
